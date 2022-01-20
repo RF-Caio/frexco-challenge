@@ -1,0 +1,28 @@
+.prod-container{
+    display: flex;
+    background-color: khaki;
+    gap: 10px;
+    width: 100%;
+}
+
+.prod-container-child {
+    flex-grow: 1;
+
+    color: #494949;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 20pt;
+    align-self: center;
+}
+
+.btn-tocart {
+    width: 100%;
+
+    color: whitesmoke;
+    align-self: center;
+    font-weight: bold;
+    font-size: 12pt;
+    
+    border-radius: 10px;
+    background-color: #0a0;
+}

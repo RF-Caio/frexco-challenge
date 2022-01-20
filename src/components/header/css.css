@@ -1,0 +1,24 @@
+header {
+    background-color: lightgoldenrodyellow;
+
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 20pt;
+    color: #494949;
+}
+
+a {
+    color: #494949;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-btn, .nav-text {
+    flex-grow: 1;
+    align-self: center;
+}
+
+span {
+    color: #00cc00;
+}

@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1%;
+    width: 100%;
+}
+
+.container-child {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    flex-grow: 1;
+}
+
+.btn-remove {
+    color: whitesmoke;
+    align-self: center;
+    font-weight: bold;
+    font-size: 12pt;
+
+    width: 100%;
+    
+    border-radius: 10px;
+    background-color: #f44;
+}

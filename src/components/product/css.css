@@ -1,8 +1,14 @@
 .prod-container{
     display: flex;
-    background-color: khaki;
-    gap: 10px;
-    width: 100%;
+    /* background-color: khaki; */
+    border: 2px solid #494949;
+    /* border-color: black;
+    border-width: 10px;
+    border-style: solid; */
+    gap: 1%;
+    width: 99%;
+    margin-top: 5%;
+    border-radius: 20px;
 }
 
 .prod-container-child {
@@ -16,13 +22,26 @@
 }
 
 .btn-tocart {
-    width: 100%;
+    width: 80%;
+    min-height: 40px;
 
-    color: whitesmoke;
+    color: #ffffff;
     align-self: center;
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 16px;
     
-    border-radius: 10px;
-    background-color: #0a0;
+    border: none;
+    box-shadow: 0 10px 5px black ;
+
+    border-radius: 20px;
+    background-color: #88bc23;
+}
+
+.btn-tocart:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+li {
+    font-size: 16px;
 }

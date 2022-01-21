@@ -1,4 +1,5 @@
 import Cart from "../components/cart/Cart"
+import Header from "../components/header/Header";
 
 function Carrinho(props){
 
@@ -7,10 +8,14 @@ function Carrinho(props){
     }
 
     return (
-        <Cart
-            cart={props.cart}
-            setCart={changeCart}
-        />
+        <>
+            <Header/>
+            <hr/>
+            <Cart
+                cart={props.cart}
+                setCart={changeCart}
+            />
+        </>
     )
 }
 

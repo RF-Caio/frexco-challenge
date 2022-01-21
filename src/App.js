@@ -9,21 +9,6 @@ import Header from './components/header/Header';
 
 function App() {
 
-  // const [products, setProducts] = useState();
-  // const [cart, setCart] = useState();
-
-  // useEffect(() => {
-  //   api
-  //     .get("/all")
-  //     .then((response) => {
-  //       setProducts(response.data);
-  //       console.log(products);
-  //     })
-  //     .catch((err) => {
-  //       console.log("dei pau: " + err);
-  //     });
-  // });
-
   const [cart, setCart] = useState([]);
 
   function updateCart(childcart){
@@ -33,11 +18,6 @@ function App() {
   
   return (
     <div className="App">
-      {console.log(cart)}
-        <Header
-          cart={cart}
-        />
-        <hr/>
         <Routes>
           <Route exact path="/" element={<Produtos cart={cart} setCart={updateCart}/>}/>
           <Route path="/carrinho" element={<Carrinho cart={cart} setCart={updateCart}/>}/>

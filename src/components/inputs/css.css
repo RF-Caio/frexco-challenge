@@ -13,6 +13,7 @@
 
 h3 {
     color: #494949;
+    font-family: sans-serif;
     font-weight: bolder;
     font-variant: small-caps;
     font-size: 20pt;
@@ -20,21 +21,37 @@ h3 {
 }
 
 input {
-    border-radius: 10px;
-    font-size: 12pt;
+    min-height: 25px;
+    border-radius: 15px;
+    font-size: 20px;
     padding-left: 2%;
-    width: 40%;
+    width: 30%;
 }
 
 .confirmamount {
-    color: whitesmoke;
+    color: #ffffff;
     align-self: center;
+    font-family: sans-serif;
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 16px;
 
-    width: 60%;
+    width: 50%;
+    min-height: 40px;
     margin-left: 2%;
     
     border-radius: 10px;
-    background-color: #0a0;
+    background-color: #88bc23;
+
+    border: none;
+    box-shadow: 0 10px 5px black ;
+}
+
+.confirmamount:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.prod-content li {
+    color: #494949;
+    font-size: 20px;
 }

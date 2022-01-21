@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import InputNum from "../inputs/InputNum";
 import Button from "../inputs/Button";
+
 import Modal from "react-modal/lib/components/Modal";
+import { Tooltip } from "@mui/material";
 
 import './css.css'
+
 
 Modal.setAppElement('#root');
 
@@ -21,6 +24,7 @@ function Product(props){
     }
 
     function closeModal(){
+        setAmount(0);
         setIsOpen(false);
     }
 
@@ -38,9 +42,20 @@ function Product(props){
 
     return (
         <div className="prod-container columns">
-            <div className="prod-container-child">
-                {displayAmount(props.product.amount)} {props.product.name}
-            </div>
+            <Tooltip
+                placement="top-start" arrow disableFocusListener
+                title={<ul>
+                    <li>Calories: {props.product.nutritions.calories}</li>
+                    <li>Carbohydrates: {props.product.nutritions.carbohydrates}</li>
+                    <li>Fat: {props.product.nutritions.fat}</li>
+                    <li>Protein: {props.product.nutritions.protein}</li>
+                    <li>Sugar: {props.product.nutritions.sugar}</li>
+                </ul>}
+            >
+                <div className="prod-container-child">
+                    {displayAmount(props.product.amount)} {props.product.name}
+                </div>
+            </Tooltip>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
@@ -48,6 +63,7 @@ function Product(props){
             >
                 <InputNum
                     name={props.product.name}
+                    nutrition={props.product.nutritions}
                     id={props.product.id} min={1} 
                     onChange={handleValueChange}
                     value={amount}

@@ -19,8 +19,49 @@
     font-weight: bold;
     font-size: 12pt;
 
-    width: 100%;
+    width: 78%;
+    min-height: 30px;
+    margin-top: 8px;
+
+    border: none;
+    box-shadow: 0 10px 5px black ;
     
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #f44;
+}
+
+.btn-clear {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #f44;
+
+    border: none;
+    box-shadow: 5px 5px 5px black ;
+
+}
+
+.btn-finish {
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #88bc23;
+
+    border: none;
+    box-shadow: -5px 5px 5px black ;
+}
+
+.btn-remove:hover, .btn-clear:hover, .btn-finish:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #494949;
 }

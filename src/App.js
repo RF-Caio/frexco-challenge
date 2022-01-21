@@ -3,17 +3,19 @@ import { Routes, Route } from "react-router-dom";
 
 import Produtos from './pages/Produtos'
 import Carrinho from './pages/Carrinho'
-import Header from './components/header/Header';
-
-// import api from './services/api'
 
 function App() {
+
+  // Ideias que não tive tempo de (ou conhecimento para) implementar
+  // 1. Filtros de pesquisa (texto e radio buttons)
+  // 2. Carrossel com notícias e sugestões de dietas (outra API?)
+  // 3. Autofill de carrinho por definição de valores nutricionais desejados (Machine Learning?)
 
   const [cart, setCart] = useState([]);
 
   function updateCart(childcart){
     setCart(childcart);
-    console.log(cart);
+    // console.log(cart);
   }
   
   return (
